@@ -1,0 +1,359 @@
+
+
+/* Add more CSS styles as needed */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    background-color: #A0CACA;
+}
+
+li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+body {
+    background: #A0CACA;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    font: 50% Cantarell, sans-serif;
+    padding: 10px;
+    margin-right: 47%;
+    border: solid 2px #EF76BA;
+}
+
+#toggle_button_one {
+    display: none;
+}
+
+#toggle_button_two {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h2 {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 50px;
+    line-height: 0.5;
+    margin: 50px 50px;
+    color: white;
+    text-align: left;
+}
+
+#dev_project_1 {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+    margin: 20px 50px;
+    color: white;
+    text-align: center;
+}
+
+#dev_project_2 {
+    display: none;
+}
+
+#dev_project_2_col3 {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+    margin: 20px 50px;
+    color: white;
+    text-align: center;
+}
+
+#security_project_1 {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+    margin: 20px 50px;
+    color: white;
+    text-align: center;
+}
+
+#security_project_2_col3 {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+    margin: 20px 50px;
+    color: white;
+    text-align: center;
+}
+
+#security_project_2 {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+#eth_trade {
+    display: block;
+    text-align: center;
+    margin: auto auto;
+}
+
+#python_rat_col3 {
+    display: block;
+    text-align: center;
+    margin: auto auto;
+}
+
+#hackthebox {
+    display: block;
+    text-align: center;
+    width: 75%;
+    margin: auto auto;
+}
+
+#resume {
+    display: none;
+}
+
+#resume_2_col3 {
+    display: block;
+    text-align: center;
+    margin: -150px 20px;
+    width: 625px;
+}
+
+#work_experience_col3 {
+    display: block;
+    text-align: center;
+    margin: auto auto;
+    width: 74%;
+}
+
+#intro_text {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#about_me_1 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#about_me_2 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#dev_text_1 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#dev_text_2_col3 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#dev_text_2 {
+    display: none;
+}
+
+#security_text_1 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#security_text_2_col3 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#security_text_2 {
+    display: none;
+}
+
+#res_text_1 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 18px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#res_text_2 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 18px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#res_text_3 {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 18px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+#res_text_1_col3 {
+    display: none;
+}
+
+#res_text_2_col3 {
+    display: none;
+}
+
+#res_text_3_col3 {
+    display: none;
+}
+
+#service_text {
+    margin: 10px 20px;
+    padding: 5px;
+    font: 100% "Montserrat Thin", sans-serif;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    border: solid 4px #EF76BA;
+}
+
+.flex-box {
+    display: flex;
+}
+
+#column_1_index {
+    width: 0;
+}
+
+#column_2_index {
+    width: 50%;
+}
+
+#column_3_index {
+    width: 50%;
+    display: block;
+    text-align: right;
+    background-image: url("/media/Vector.png");
+    background-size: 800px 800px;
+    margin: -200px 0 0 0;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+#column_2_about {
+    width: 100%;
+}
+
+#column_2_portfolio {
+    width: 50%;
+}
+
+#column_3_portfolio {
+    width: 50%;
+}
+
+#column_1_service {
+    width: 0%;
+}
+
+#column_2_service {
+    width: 50%;
+}
+
+#column_3_service {
+    width: 50%;
+    display: block;
+    text-align: right;
+    background-image: url("/media/Vector.png");
+    background-size: 800px 800px;
+    margin: -200px 0 0 0;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+#contact_info {
+    font: 75% "Cantarell Extra Bold", sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    background-color: #EF76BA;
+}
