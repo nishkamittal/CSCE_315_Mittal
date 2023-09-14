@@ -1,68 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="toggle.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <meta charset="UTF-8">
-    <title>Qualifications</title>
-</head>
-
-<h1>
-    <button id="toggle_button_one" onClick="theme_two()">Toggle Style</button>
-    <button id="toggle_button_two" onClick="theme_one()">Toggle Style</button>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Technical Portfolio</a></li>
-        <li><a href="qualifications.html">Qualifications</a></li>
-        <li><a href="service.html">Service Section</a></li>
-        <li><a href="ai.html">AI Generated Page</a></li>
-        <li><a href="https://github.com/nishkamittal">Check out my GitHub!</a></li>
-
-    </ul>
-</h1>
-
-<body onload="load_style()">
-
-<h2>
-    QUALIFICATIONS
-</h2>
-<div class="flex-box">
-
-    <div id="column_1" class="left">
-        <span id="dot_1" class="dot"></span>
-        <span id="dot_2" class="dot"></span>
-        <span id="dot_3" class="dot"></span>
-        <span id="dot_4" class="dot"></span>
-    </div>
-
-    <div id="column_2" class="center">
-        <div class="image-hover-zoom-1">
-            <img id="resume" src="../media/resume.png" alt="Resume">
+<html>
+    <head>
+        <title>Qualifications</title>
+        <link id="mainstylesheet" rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body class="background", id="background-id">
+        <!--copying all the links from before again to maintain consistency-->
+        <div class="background-overlay", id="overlay">
+            <div class="navbar"> 
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="qualifications.html"><strong>Qualifications</strong></a>
+                <a href="service.html">Service</a>
+                <a href="ai.html">AI Generated Page</a>
+                <button onclick="toggleStyleSheet()" type="button"> Toggle Style </button>
+            </div>
+    <!--toggle button here so that we can switch between the styles-->
+            <div class="page-body" > 
+                <div class="main" > 
+                    <header>
+                        <h1>Qualifications</h1>
+                    </header>
+                      <div class="side-by-side"> 
+                        <a class="selection" id="interests" href="#">Interests</a> 
+                        <!--divvying it up into 3 sections-->
+                        <a class="selection" id="skills" href="#">Skills</a>
+                        <a class="selection" id="resume" href="#">Resume</a> 
+                        <div class="info" id = "quals-interests">
+                            <h2>Interests</h2>
+                            <h3>Here are some of my interests</h3>
+                            <p>Machine Learning</p>
+                            <p>Data Science</p>
+                            <p>Databases</p>
+                            <p>Statistics</p>
+                            <p>Tech Consulting</p>
+                            <p>Data Visualization</p>
+                        </div>
+                        <div class="info" id="quals-skills">
+                            <h2>Skills</h2>
+                            <h3>Here are some of my skills</h3>
+                            <p>Python</p>
+                            <p>C++</p>
+                            <p>Java</p>
+                            <p>HTML</p>
+                            <p>CSS</p> 
+                            <h3>Here are some of my past internship experiences</h3>
+                        <p><a href="https://ww2.eagle.org/en.html" target="_blank"><b><u>ABS</b></u></a>I interned at ABS within their Corporate Technology Division, and more specifically within
+                        their Data and Digital Applications Team. Here, I was able to work on a variety of different projects including
+                    machine learning, natural language processing, and even did some research on carbon capture at the <a href="https://www.ccus-expo.com/" target="_blank"><b><u>Carbon Capture Expo</u></b></a>
+                in Houston.</p>
+                        <p><a href="https://sec.tamu.edu/docs/SEC%20Directed%20Internship%20-%20Industry.pdf" target="_blank"><b><u>SEC Directed Internship</b></u></a>During my freshman year, I was able to work with different professors 
+                        within the Engineering Department on a project that was then shared with a panel. I specifically focused on machine learning techniques
+                    in relation to predictive maintenance.</p>                          
+                        </div>
+                        <div class="info" id="quals-resume">
+                            <!--adding resume classes so that we can apply some formats here-->
+                            <div class="resume-container" style="height:100%">
+                                <!--3 links on this page-->
+                                <div class="resume-head">
+                                    <!--link to resume, please work! -->
+                                    <h2>Resume</h2>
+                                    <h3>Click <a href="resume.pdf"><strong>here</strong></a> to view as a PDF</h3>
+                                </div>
+                                <!--link to resume, please work! -->
+                                <div class="resume-pdf-wrap">
+                                    <embed src="resume.pdf" width="100%" height="450px"/>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <!--linkedin stuff again-->
+                    <div class="footer">
+                        <a id="Linkedin" href="https://www.linkedin.com/in/nishka-mittal" target="_blank">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <p id="res_text_1">
-            As mentioned on the home page, my technical areas of interest include a couple different things,
-            such as Data Consulting and Machine Learning. In my internships for the past couple years, I have
-            been able to explore these fields in a bit more depth, and I hope that in the future, I get to explore these
-            areas a bit more via my electives as well as job opportunities.
-        </p>
-        <p id="res_text_2">
-            As you can see in the resume, some of my technical skills include Java, Python, C++, SQL, Logisim and JavaFX Scene Builder.
-            I also have some experience with linux environments and developing machine learning approaches for different data sets.
-            I have also worked with different platforms such as VS Code
-            <a href="https://www.kali.org/">VS Code</a>,
-            <a href="https://www.wireshark.org/">Scheme </a>, DrRacket, and more.
-        </p>
-        <p id="contact_info">
-            Email: nishka06@tamu.edu
-            <br>
-            Phone: 979-985-0743
-        </p>
-
-    </div>
-
-    
-
-</body>
+        <!--link to change in layout for qualifications page-->
+        <script src="toggle.js"></script>
+        <script src="changequalifications.js"></script>
+    </body> 
 </html>

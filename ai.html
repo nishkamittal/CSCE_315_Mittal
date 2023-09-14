@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="toggle.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <meta charset="UTF-8">
-    <title>AI Generated Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger Federer's Grand Slams</title>
+    <style>
+        body {
+            font-family: Oswald, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('federer.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #33adad;
+            padding: 10px 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #33adad;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar a {
+            color: #cc0066;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* White with some transparency for better readability */
+            color: #cc0066;
+            text-align: center;
+            padding: 20px;
+        }
+        .chart {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .bar {
+            width: 40px; /* Adjust the width of the bars */
+            margin: 0 10px; /* Spacing between bars */
+            text-align: center;
+            padding: 5px 0;
+            font-weight: bold;
+            color: #cc0066;
+        }
+        .australian-open { background-color: purple; }
+        .french-open { background-color: orange; }
+        .wimbledon { background-color: green; }
+        .us-open { background-color: blue; }
+        .box {
+            background-color: #33adad;
+            padding: 10px;
+            margin-top: 20px;
+            color: white; /* White text on the box */
+        }
+    </style>
 </head>
-
-<h1>
-    <button id="toggle_button_one" onClick="theme_two()">Toggle Style</button>
-    <button id="toggle_button_two" onClick="theme_one()">Toggle Style</button>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Technical Portfolio</a></li>
-        <li><a href="qualifications.html">Qualifications</a></li>
-        <li><a href="service.html">Service Section</a></li>
-        <li><a href="ai.html">AI Generated Page</a></li>
-        <li><a href="https://github.com/nishkamittal">Check out my GitHub!</a></li>
-
-    </ul>
-</h1>
-
-<body onload="load_style()">
-
-<h2>
-    AI Generated Page
-</h2>
-<div class="flex-box">
-
-    <div id="column_1_service" class="left">
-        <span id="dot_1" class="dot"></span>
-        <span id="dot_2" class="dot"></span>
-        <span id="dot_3" class="dot"></span>
-        <span id="dot_4" class="dot"></span>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Technical Portfolio</a></li>
+            <li><a href="qualifications.html">Qualifications Section</a></li>
+            <li><a href="service.html">Service Section</a></li>
+            <li><a href="ai.html">AI Generated Page</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h2>Roger Federer's Grand Slams</h2>
+        <div class="chart">
+            <div class="bar australian-open" style="height: 60px;">Australian Open<br>6</div>
+            <div class="bar french-open" style="height: 10px;">French Open<br>1</div>
+            <div class="bar wimbledon" style="height: 80px;">Wimbledon<br>8</div>
+            <div class="bar us-open" style="height: 50px;">US Open<br>5</div>
+        </div>
+        <div class="box">
+            Please make html code that displays this data as a bar chart: Australian Open 6, French Open 1, Wimbledon 8, US Open 5. 
+            Also, make the bars narrower and the height should represent the number relative to the other numbers. 
+            Can you make the bars purple, orange, green and blue pastel colors respectively with a high contrast label font. 
+            Add a title 'Roger Federer's Grand Slams'. Now please make the page background an image of roger federer, 
+            the title and labels #cc0066 and the font Oswald. Also, add a small box below the bar chart with a background #33adad that
+             contains the words given to make this page. Add a navigation bar at the top that can go to 'Home', 
+             'Technical Portfolio', 'Qualifications Section', 'Service Section' and 'AI Generated Page'. Finally, make the background of this 
+             navigation bar #33adad. Change the color of the items in the navigation bar to #cc0066. PLEASE.
+        </div>
     </div>
-
-    <div id="column_2_service" class="center">
-        <p id="service_text">
-            I have been a member of the Interact Club since highschool.
-            This is an organization that creates different volutneering opportunities targetted towards
-            the underpriveleged. In the past I have participated in events such as Sports Days, Bake Fests and different donation drives.
-            <a href="https://missionarlington.org/">"Interact Club"</a>
-            <br>
-            <br>
-            I also will be mentoring younger students in <a href="https://cybr.club/">AWiCS's Rubies program.</a> This program allows women
-            in computer science to help incoming students. This program helped me greatly when I first came to A&M as a mentee,
-            and I hope to do be able to help another student in the same way.
-        </p>
-
-        <p id="contact_info">
-            Email: nishka06@tamu.edu
-            <br>
-            Phone: 979-985-0743
-        </p>
-    </div>
-
-    <div id="column_3_service" class="right">
-        <span id="dot_5" class="dot"></span>
-        <span id="dot_6" class="dot"></span>
-        <span id="dot_7" class="dot"></span>
-        <span id="dot_8" class="dot"></span>
-    </div>
-</div>
-
 </body>
 </html>

@@ -1,68 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="toggle.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <meta charset="UTF-8">
-    <title>Service Section</title>
-</head>
+<html>
+    <head>
+        <title>Service Section</title>
+        <link id="mainstylesheet" rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body class="background" id="background-id">
+                    <!--Here are all the links to pages I need for the project-->
+        <div class="background-overlay" id="overlay">
+            <div class="navbar"> 
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="qualifications.html">Qualifications</a>
+                <a href="service.html"><strong>Service</strong></a>
+                <a href="ai.html">AI Generated Page</a>
+                <button onclick="toggleStyleSheet()" type="button"> Toggle Style </button>
+                <!--adding toggle button so that we can switch between the styles-->
+            </div>
+    
+            <div class="page-body" id="servicepage"> 
+                <!--SERVICE SECTION!!!-->
+                <div class="main" id="service-main"> 
+                    <header>
+                        <h1>Service</h1>
+                    </header>
+                    <div class="side-by-side">
+                        <!--I would like to divide this up into 2 sections-->    
+                        <a class="selection" id="past-serv" href="#">Past</a> 
+                        <a class="selection" id="opps" href="#">Opportunities</a>
+                        <!-- PAST SERVICE and some of my FAVORITE ORGANIZATIONS-->
+                        <div class="info" id="service-past">
+                            <h2>My Past Service Opportunities</h2>
+                            <h3>Interact Club</h3>
+                            <h4>As a part of the Interact Club,I have participated in events such as organizing sports days for underpriveleged kids, clothes and book donations, as well as bake sales to raise money.</h4>
+                            <h3>Big Event</h3>
+                            <h4>As a part of Texas A&M University's Big Event, I have been able to go to houses in the Bryan area and help out with yardwork or even within the house for families that need the assistance.</h4>
+                        </div>
+                        <div class="info" id="service-opps">
+                            <h2>My Favorite Organizations</h2>
+                            <h3>Here are some of my favorite organizations</h3>
 
-<h1>
-    <button id="toggle_button_one" onClick="theme_two()">Toggle Style</button>
-    <button id="toggle_button_two" onClick="theme_one()">Toggle Style</button>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Technical Portfolio</a></li>
-        <li><a href="qualifications.html">Qualifications</a></li>
-        <li><a href="service.html">Service Section</a></li>
-        <li><a href="ai.html">AI Generated Page</a></li>
-        <li><a href="https://github.com/nishkamittal">Check out my GitHub!</a></li>
-
-    </ul>
-</h1>
-
-<body onload="load_style()">
-
-<h2>
-    SERVICE SECTION
-</h2>
-<div class="flex-box">
-
-    <div id="column_1_service" class="left">
-        <span id="dot_1" class="dot"></span>
-        <span id="dot_2" class="dot"></span>
-        <span id="dot_3" class="dot"></span>
-        <span id="dot_4" class="dot"></span>
-    </div>
-
-    <div id="column_2_service" class="center">
-        <p id="service_text">
-            I have been a member of the Interact Club since highschool.
-            This is an organization that creates different volutneering opportunities targetted towards
-            the underpriveleged. In the past I have participated in events such as Sports Days, Bake Fests and different donation drives.
-            <a href="https://missionarlington.org/">"Interact Club"</a>
-            <br>
-            <br>
-            I also will be mentoring younger students in <a href="https://cybr.club/">AWiCS's Rubies program.</a> This program allows women
-            in computer science to help incoming students. This program helped me greatly when I first came to A&M as a mentee,
-            and I hope to do be able to help another student in the same way.
-        </p>
-
-        <p id="contact_info">
-            Email: nishka06@tamu.edu
-            <br>
-            Phone: 979-985-0743
-        </p>
-    </div>
-
-    <div id="column_3_service" class="right">
-        <span id="dot_5" class="dot"></span>
-        <span id="dot_6" class="dot"></span>
-        <span id="dot_7" class="dot"></span>
-        <span id="dot_8" class="dot"></span>
-    </div>
-</div>
-
-</body>
+                        <b><u><a href="https://www.rotary.org/en/get-involved/interact-clubs" target="_blank">Interact Club</a></b></u>
+                            <h4>This is an international organization that organizes all sorts of events, including ones that I mentioned in my past service,
+                                but they focus on providing the underpriveleged with different resources and social environments, depending on their need.
+                            </h4>
+                            <b><u><a href="https://bigevent.tamu.edu/" target="_blank">Big Event</a></u></b>
+                            <h4>The Big Event works with TAMU students to help families in Bryan with assistance around the house.</h4>
+                            <b><u><a href="https://girlswhocode.com/" target="_blank">Girls Who Code</a></u></b>
+                            <h4>As a part of AWiCS, I have done workshops in the Bryan area with Girls Who Code. 
+                                This organization aims to help young girls looking to enter the world of tech with additional assistance
+                                in finding their community, and leveling out the playing field with some additional technical skills.
+                            </h4>
+                        </div>
+                        <!--We have 3 links on this page-->
+                    </div>
+                    <div class="footer">
+                        <!--linkedin info again-->
+                        <a id="Linkedin" href="https://www.linkedin.com/in/nishka-mittal" target="_blank">
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+          <!--links to toggle stuff again-->  
+        </div>
+        <script src="toggle.js"></script>
+        <script src="changeservice.js"></script>
+    </body>
+    
 </html>

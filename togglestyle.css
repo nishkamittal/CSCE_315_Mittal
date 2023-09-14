@@ -1,0 +1,267 @@
+/*this is the stylesheet for when we toggle between the 2 options*/
+@font-face {
+    font-family: oswald;
+    src: url(Oswald/Oswald-VariableFont_wght.ttf);
+  }
+  /*here are some families i would like to use*/
+  @font-face {
+    font-family: lora;
+    src: url(Lora/Lora-VariableFont_wght.ttf);
+  }
+  /*general styling for throughout the page*/
+  *{
+      padding: 0;
+      margin: 0;
+  
+    }
+    .navbar, h1, .selection, button {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+     }
+  
+     .info, .index-info {
+      font-family: 'Lora', serif;
+     }
+  
+     h1, h2{
+      font-weight: bold;
+     }
+    
+    header{
+      width: auto;
+      height: 0px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #555d60; /* This is a comment! */
+      font-size: 0px; 
+      display: inline-block;
+      position: relative;
+    }
+    
+    h2, h3, h4, h5 {
+      color: #ebe8e6;
+    }
+  
+    h3, h5{
+      padding-bottom: 15px;
+      font-weight: 100;
+      font-size: 15px;
+    }
+  
+    h2, h4{
+      padding-bottom: 5px;
+      font-weight: 600;
+    }
+    
+    
+    .page-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: relative;
+    }
+    
+    .home-background, .background{
+      padding: 0;
+      margin: 0;
+      position: relative;
+      background-color: #102222;
+      overflow-x: hidden;
+    }
+    
+    
+    .main {
+      margin-bottom: 0px;
+      width: 100%;
+      position: relative;
+      min-height: calc(100vh - 70px);
+    }
+    
+    .side-by-side{
+      display: flex;
+      width: 100%;
+      height: calc(100vh - 245px);
+      min-height: fit-content;
+      justify-content: center;
+   
+    }
+    
+    .info{
+      display: inline-block;
+      position: absolute;
+      width: 90%;
+      height: 70%;
+      border-radius: 25px;
+      background: #2a3c3c;
+      box-shadow:  -10px 16px 2px 1px #0a1616;
+      margin: auto;
+      padding: 10px;
+      text-align: center;
+      top:80px;
+    }
+    .index-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-top: 10%;
+      padding-bottom: 20%;
+      padding-left: 30%;
+      padding-right: 30%;
+      height: fit-content;
+      min-height: 100%;
+      border-radius: 25px;
+      background: #2a3c3c;
+      box-shadow:  -10px 16px 2px 1px #0a1616;
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      top:80px;
+      flex: 2 0 0;
+      
+    }
+    
+    .footer {
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      background-color: #0a1616;
+      position:absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      
+    }
+    
+    .footer a{
+      color: #ebe8e6;
+      padding:10px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(1271%) hue-rotate(300deg) brightness(92%) contrast(100%);
+    }
+    
+    .info a, p {
+      display: block;
+      padding: 7px;
+      color: #ece7e2;
+      text-align: center;
+      margin:0;
+    }
+  
+    .selection{
+      margin: 25px;
+      padding: 5px;
+  
+    }
+  
+    .selection {
+      color: grey;
+      font-size: 25px;
+      background-image: linear-gradient(rgba(128, 128, 128, 0.669), rgba(128, 128, 128, 0.669));
+      background-size: 0 3px, auto;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      transition: all .2s ease-out;
+      text-decoration: none;
+      align-self: flex-start;
+  
+    }
+  
+    .side-by-side a:hover{
+      background-size: 100% 5px, auto;
+    }
+  
+    .info{
+      opacity: 0;
+    }
+    @media screen and (max-width: 717px) {
+      .navbar{
+        flex-direction: column;
+      }
+      .navbar a{
+        text-align: center;
+        float: none;
+      }
+      
+    }
+  
+  
+    #quals-resume a{
+      display:inline;
+    }
+  
+    
+    /* navbar styling */
+    .navbar {
+      right: 0px;
+      height: auto;
+      position: relative;  
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; 
+      padding: 6px 16px 6px 16px;
+      background: #0a1616;
+      overflow: auto;
+      font-size: 25px;
+      top : 0;  
+    }
+    
+    .navbar a {  
+      display: block;
+      padding: 10px;
+      color: #ece7e2;
+    }  
+  
+    .index-info a {
+      font-weight: bold;
+      color: #ece7e267;
+    }
+  
+    /* regular link */
+    .navbar a:link{
+      color: #ece7e2;
+      text-decoration: none;
+    }
+  
+    .info a:link, .index-info a:link, 
+    .info a:hover, .index-info a:hover {
+      font-weight: bold;
+      color: #ece7e267;
+    }
+    
+    /* previously clicked on link */
+    .navbar a:visited, .info a:visited, .index-info a:visited  {
+      color: #ece7e2;
+      text-decoration: none;
+    }
+    
+    /* hover over link */
+    .navbar a:hover  {
+      color: #ece7e2;
+      font-weight: bold;
+    }
+    
+    /* clicked on link */
+    .navbar a:active, .info a:active, .index-info a:active  {
+      color: #ece7e2;
+      font-weight: bold;
+    }
+  
+    button {
+      background-color: #ea718500;
+      border:2px solid #ece7e2;
+      border-radius: 12px;
+      font-family: andale mono, monospace; 
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px;
+      
+    }
+    
+    button:hover {
+      background-color: #ece7e2;
+      color: #cc0066;
+    }
+    
